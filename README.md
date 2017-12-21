@@ -19,7 +19,7 @@ After you imported libs, somewhere in your component's code:
 </Accordion>
 
 ```
-
+![Image of Collapsy](https://media.giphy.com/media/3o751YjTKVOaBINjzy/giphy.gif)
 ## props/options
 
 #### isOpen
