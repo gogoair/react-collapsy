@@ -1,2 +1,2 @@
-# react-simple-accordion
+# react-collapsy
 Simple accordion component

@@ -1,0 +1,46 @@
+.Accordion {
+  border: 1px solid #3d3d3d;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  overflow: hidden; }
+
+.Accordion__header {
+  background: #3d3d3d;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  font-family: font-bold, sans-serif; }
+  .Accordion__header:after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    background: url("arrow-row-expand-down-ico-white.svg") no-repeat;
+    transform: rotate(180deg);
+    transition: transform 0.3s; }
+
+.Accordion__header--collapsed:after {
+  transform: rotate(0deg); }
+
+.Accordion__body {
+  height: auto;
+  opacity: 1;
+  overflow-y: hidden;
+  overflow-x: auto;
+  transition: all 0.2s;
+  padding: 15px 15px; }
+
+.Accordion__body--collapsed {
+  height: 0;
+  opacity: 0;
+  padding: 0 70px;
+  transition: all 0.2s; }
