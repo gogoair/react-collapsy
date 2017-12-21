@@ -1,5 +1,5 @@
 # react-collapsy
-Simple accordion component
+Simple lightweight (1.5kb minified+gzipped) accordion component
 
 ## Usability
 This plugin require for you to have react and font-awesome, after that import react combo select
@@ -23,7 +23,7 @@ After you imported libs, somewhere in your component's code:
 ## props/options
 
 #### isOpen
-If passed Accordion will render expanded
+If passed Accordion will be render expanded
 ```javascript
 <Accordion isOpen />
 ```
@@ -47,5 +47,9 @@ If passed title will be displayed
 If passed classes will be added to header div and content wrapper div, respectfully. (e.g. 'Accordion__header ' + this.props.headerClass)
 
 ```javascript
-<Accordion title='Some title' />
+<Accordion headerClass='YourCustomHeaderClass' contentWrapperClass='YourCustomAccordionContentClass' />
 ```
+
+## Example project
+
+Clone/download the repo followed by npm (i) install && npm start, so you can check this magnificent component in local. If you have any comment, suggestion, issue, please report it, as I will try to keep this component alive.
