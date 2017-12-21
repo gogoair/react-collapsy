@@ -43,7 +43,7 @@ render() {
                 onClick={this.toggle}
                 className={
                     this.state.open
-                    ? 'Accordion__header ' + this.props.headerClass
+                    ? this.props.headerClass ? 'Accordion__header ' + this.props.headerClass : 'Accordion__header'
                     : 'Accordion__header Accordion__header--collapsed'
                 }
             >
@@ -51,7 +51,7 @@ render() {
             </div>
             <div className={
                     this.state.open
-                    ? 'Accordion__body ' + this.props.contentWrapperClass
+                    ? this.props.contentWrapperClass ? 'Accordion__body ' + this.props.contentWrapperClass : 'Accordion__body'
                     : 'Accordion__body Accordion__body--collapsed'
                 }>
                 {this.props.children}
