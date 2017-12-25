@@ -2,7 +2,7 @@
 Simple lightweight (1.5kb minified+gzipped) accordion component
 
 ## Usability
-This plugin require for you to have react and font-awesome, after that import react combo select
+This plugin require for you to have react, after that import react-collapsy
 ```javascript
 import Accordion from 'react-collapsy';
 ```

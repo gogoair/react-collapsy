@@ -11,7 +11,7 @@
   "main": "./lib/index.jsx",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js  --hot --progress --colors --port 8081 --open",
-    "test": "mocha -r mock-local-storage --compilers js:babel-core/register --require ./src/test/testInitialization.js \"src/test/**/*@(.test.js|.test.jsx)\"",
+    "test": "mocha --require babel-core/register --require ./src/test/testInitialization.js \"src/test/**/*@(.test.js|.test.jsx)\"",
     "prepublish": "rm -rf ./lib && mkdir lib && cp ./src/styles/index.css ./lib && cp ./src/styles/arrow-row-expand-down-ico-white.svg ./lib && ./node_modules/.bin/babel src/index.jsx --out-file lib/index.jsx && ./node_modules/.bin/babel lib/index.jsx",
     "postpublish": "rm -rf ./lib",
     "precommit": "npm test"
@@ -43,18 +43,12 @@
     "enzyme-adapter-react-16": "^1.0.1",
     "eslint": "^3.19.0",
     "eslint-plugin-react": "^6.10.3",
-    "font-awesome": "^4.7.0",
     "jsdom": "^11.5.1",
     "jsdom-global": "^3.0.2",
     "mocha": "^4.0.1",
-    "mock-local-storage": "^1.0.2",
-    "moment": "^2.19.4",
-    "prettier": "^1.9.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^3.0.0-beta.7",
-    "react-test-renderer": "^16.0.0",
-    "react-test-utils": "0.0.1",
     "sinon": "^1.17.4",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.4"
