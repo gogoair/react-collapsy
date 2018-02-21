@@ -6,10 +6,18 @@ import Accordion from '../src/index.jsx';
 import ReactDOM from 'react-dom';
 
 function render(Component) {
+    const headerChildren = () => {
+      return (
+          <h4>
+              Wowowowow
+          </h4>
+      );
+    };
+
 	ReactDOM.render(
 		<HotContainer>
 			<div style={{ "padding": "30px" }}>
-				<Component title={'Test title'} isOpen>
+				<Component headerChildren={headerChildren} isOpen>
 					<span>Lorem ipsum dolor sit amet, eos choro dolor mnesarchum ne, nostrum facilisi adipisci at usu. No qui liber integre epicurei, duo ex officiis inciderint. Vix iuvaret saperet eleifend id, sit nostrud aliquam an, verear fastidii temporibus ius cu. In postea dolorem vis, quo id persecuti argumentum. Nec no facilisis torquatos, modus utroque his ad.
 
 						Has mucius delicata ad. Modo albucius qui eu, epicurei philosophia nec te, his eius omnesque dissentiet in. An eam cibo ullum, debitis patrioque dissentiunt sed no. Choro tincidunt id sit, cetero accommodare ei quo. Error consequuntur ne eum, an per prompta molestie.

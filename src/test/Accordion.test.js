@@ -33,6 +33,15 @@ describe('Accordion component', () => {
         expect(accordion.contains(<div className="testUnique" />)).to.be.true;
     });
 
+    it('should render header children when render prop is passed', () => {
+        const accordion = shallow(
+            <Accordion headerChildren={() => {
+                return <div className="testUnique" />
+            }} />
+        );
+        expect(accordion.contains(<div className="testUnique" />)).to.be.true;
+    });
+
     it('should render in "expanded" mode when isOpen prop is passed', () => {
         const accordion = shallow(
             <Accordion isOpen>
