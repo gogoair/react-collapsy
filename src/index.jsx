@@ -49,7 +49,7 @@ export default class Accordion extends Component {
                     }
                 >
                     {this.props.title}
-                    {this.props.headerChildren ? this.props.headerChildren() : null}
+                    {this.props.headerChildren ? this.props.headerChildren(this.state.open) : null}
                 </div>
                 <div className={
                     this.state.open
