@@ -1,6 +1,6 @@
 {
   "name": "react-collapsy",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "keywords": [
     "react",
     "accordion",
@@ -12,7 +12,7 @@
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js  --hot --progress --colors --port 8081 --open",
     "test": "mocha --require babel-core/register --require ./src/test/testInitialization.js \"src/test/**/*@(.test.js|.test.jsx)\"",
-    "prepublish": "rm -rf ./lib && mkdir lib && cp ./src/styles/index.css ./lib && cp ./src/styles/arrow-row-expand-down-ico-white.svg ./lib && ./node_modules/.bin/babel src/index.jsx --out-file lib/index.jsx && ./node_modules/.bin/babel lib/index.jsx",
+    "prepare": "rm -rf ./lib && mkdir lib && cp ./src/styles/index.css ./lib && cp ./src/styles/arrow-row-expand-down-ico-white.svg ./lib && ./node_modules/.bin/babel src/index.jsx --out-file lib/index.jsx && ./node_modules/.bin/babel lib/index.jsx",
     "postpublish": "rm -rf ./lib",
     "precommit": "npm test"
   },
